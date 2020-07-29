@@ -1,0 +1,34 @@
+r=5;
+efi=0;c=1;efi1=1;
+while c<1900
+    real=(fea(c,r)+fea(c+1,r)+fea(c+2,r)+fea(c+3,r)+fea(c+4,r))/5;
+    forge=(fea(c+10,r)+fea(c+11,r)+fea(c+13,r)+fea(c+14,r)+fea(c+12,r))/5;
+    if(real-fea(c+5,r)<forge-fea(c+5,r))
+        efi=efi+1;
+    end
+    if(real-fea(c+6,r)<forge-fea(c+6,r))
+        efi=efi+1;
+    end
+    if(real-fea(c+7,r)<forge-fea(c+7,r))
+        efi=efi+1;
+    end
+    if(real-fea(c+8,r)<forge-fea(c+8,r))
+        efi=efi+1;
+    end
+    if(real-fea(c+9,r)<forge-fea(c+9,r))
+        efi=efi+1;
+    end
+    if(real-fea(c+15,r)>forge-fea(c+15,r))
+        efi1=efi1+1;
+    end
+    if(real-fea(c+16,r)>forge-fea(c+1,r))
+        efi1=efi1+1;
+    end
+    if(real-fea(c+17,r)>forge-fea(c+17,r))
+        efi1=efi1+1;
+    end
+    if(real-fea(c+18,r)>forge-fea(c+18,r))
+        efi1=efi1+1;
+    end
+    c=c+19;
+end
